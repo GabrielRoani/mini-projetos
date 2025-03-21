@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.teladecadastro.cadastroController">
+    <VBox alignment="TOP_CENTER" spacing="10" layoutX="20" layoutY="20">
+        <children>
+            <TextField fx:id="NomeTextField" promptText="Nome"/>
+            <TextField fx:id="EmailTextField" promptText="Email"/>
+            <TextField fx:id="IdadeTextField" promptText="Idade"/>
+            <Button fx:id="adicionarPessoa" text="Adicionar Pessoa" onAction="#adicionarPessoa"/>
+            <TableView fx:id="tableView" prefHeight="200.0" prefWidth="580.0">
+                <columns>
+                    <TableColumn fx:id="listaNomes" text="Nome"/>
+                    <TableColumn fx:id="listaEmail" text="Email"/>
+                    <TableColumn fx:id="listaIdades" text="Idade"/>
+                </columns>
+            </TableView>
+        </children>
+    </VBox>
+</AnchorPane>
